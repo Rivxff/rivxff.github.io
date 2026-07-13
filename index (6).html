@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rivxff - سحوبات فري فاير</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet"/>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222030055498500" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: #0a0f1e;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0d1b3e, #1a3a6e);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #2563eb;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.3);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    header h1 span {
+      color: #3b82f6;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(180deg, #0d1b3e 0%, #0a0f1e 100%);
+      text-align: center;
+      padding: 48px 20px 32px;
+    }
+
+    .hero .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 span {
+      color: #3b82f6;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    /* STEPS */
+    .steps {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      padding: 0 20px;
+    }
+
+    .step {
+      background: #111827;
+      border: 1px solid #1e3a5f;
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .step .num {
+      width: 36px;
+      height: 36px;
+      background: #2563eb;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 1rem;
+      margin: 0 auto 10px;
+    }
+
+    .step p {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+
+    /* AD BOX */
+    .ad-section {
+      background: #111827;
+      border: 2px dashed #2563eb;
+      border-radius: 16px;
+      margin: 0 auto 32px;
+      max-width: 600px;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    .ad-section .ad-label {
+      font-size: 0.75rem;
+      color: #64748b;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .ad-section .ad-placeholder {
+      background: #1e293b;
+      border-radius: 10px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .ad-timer {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .ad-timer span {
+      color: #3b82f6;
+      font-weight: 700;
+    }
+
+    /* FORM */
+    .form-section {
+      max-width: 500px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+    }
+
+    .form-section h3 {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #e2e8f0;
+    }
+
+    .form-section h3 span {
+      color: #3b82f6;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .input-group input {
+      flex: 1;
+      background: #111827;
+      border: 2px solid #1e3a5f;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 1rem;
+      color: #fff;
+      font-family: 'Tajawal', sans-serif;
+      outline: none;
+      transition: border 0.2s;
+      text-align: right;
+    }
+
+    .input-group input:focus {
+      border-color: #2563eb;
+    }
+
+    .input-group input::placeholder {
+      color: #475569;
+    }
+
+    .input-group button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 22px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'Tajawal', sans-serif;
+      transition: background 0.2s, transform 0.1s;
+      white-space: nowrap;
+    }
+
+    .input-group button:hover {
+      background: #1d4ed8;
+      transform: scale(1.03);
+    }
+
+    .input-group button:disabled {
+      background: #334155;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* SUCCESS */
+    .success-msg {
+      display: none;
+      background: #052e16;
+      border: 1px solid #16a34a;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      color: #4ade80;
+      margin-top: 16px;
+      font-size: 1rem;
+    }
+
+    /* PRIZE */
+    .prize-section {
+      background: linear-gradient(135deg, #0d1b3e, #1a3a6e);
+      border-top: 2px solid #2563eb;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .prize-section img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 16px;
+      border: 2px solid #2563eb;
+      box-shadow: 0 8px 32px rgba(37,99,235,0.3);
+      margin-bottom: 16px;
+    }
+
+    .prize-section .maybe {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
+
+    .prize-section .maybe span {
+      color: #3b82f6;
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #475569;
+      font-size: 0.8rem;
+      border-top: 1px solid #1e293b;
+    }
+
+    footer a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222030055498500" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🎮 <span>Rivxff</span> - سحوبات فري فاير</h1>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="badge">🔥 السحب مفتوح الآن</div>
+    <h2>اربح <span>بوياه مجاني</span><br/>في فري فاير!</h2>
+    <p>شاهد الإعلان وأدخل الـ ID الخاص بك للمشاركة في السحب — الفائز يُعلن على القناة!</p>
+  </div>
+
+  <!-- STEPS -->
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <p>شاهد الإعلان كامل</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <p>أدخل ID الخاص بك</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <p>انتظر إعلان الفائز</p>
+    </div>
+  </div>
+
+  <!-- AD SECTION -->
+  <div class="ad-section" style="margin: 0 20px 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+    <div class="ad-label">📢 الإعلان الراعي</div>
+    <!-- ضع كود إعلانك هنا من Kahf Ads أو Muslim Ad Network -->
+    <div class="ad-placeholder">
+      [ مساحة الإعلان — ضع كود الإعلان هنا ]
+    </div>
+    <div class="ad-timer">بعد مشاهدة الإعلان، أدخل الـ ID بالأسفل ✅</div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-section">
+    <h3>أدخل <span>ID</span> الخاص بك</h3>
+    <div style="text-align:center;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuYPxPn_KOUdLKKLI3ggA6SoxT7FfFg0nDLp99fRjzGl4nqA/viewform" target="_blank" style="display:inline-block; background:#2563eb; color:#fff; padding:16px 40px; border-radius:12px; font-size:1.1rem; font-weight:700; text-decoration:none; font-family:'Tajawal',sans-serif;">
+        📝 سجّل الآن
+      </a>
+      <p style="margin-top:14px; color:#94a3b8; font-size:0.9rem;">اضغط الزر وأدخل الـ ID الخاص بك ✅</p>
+    </div>
+  </div>
+
+  <!-- PRIZES -->
+  <div class="prize-section">
+    <img src="booyah.png" alt="بطاقة بوياه فري فاير الرسمية"/>
+    <p class="maybe">وربما <span>جوائز أخرى</span> 🎁</p>
+  </div>
+
+  <!-- ARTICLES -->
+  <div style="max-width:600px; margin: 0 auto 48px; padding: 0 20px;">
+    <h3 style="text-align:center; font-size:1.3rem; font-weight:900; margin-bottom:20px; color:#fff;">📚 مقالات مفيدة</h3>
+    <div style="display:flex; flex-direction:column; gap:12px;">
+      <a href="tips.html" style="background:#111827; border:1px solid #1e3a5f; border-radius:12px; padding:16px 20px; text-decoration:none; display:block;">
+        <div style="color:#3b82f6; font-weight:700; margin-bottom:4px;">🎯 أفضل نصائح فري فاير 2026</div>
+        <div style="color:#64748b; font-size:0.85rem;">نصائح احترافية للمبتدئين والمحترفين</div>
+      </a>
+      <a href="devices.html" style="background:#111827; border:1px solid #1e3a5f; border-radius:12px; padding:16px 20px; text-decoration:none; display:block;">
+        <div style="color:#3b82f6; font-weight:700; margin-bottom:4px;">📱 أفضل الهواتف والأجهزة لفري فاير 2026</div>
+        <div style="color:#64748b; font-size:0.85rem;">مقارنة شاملة لأفضل الأجهزة لكل الميزانيات</div>
+      </a>
+      <a href="about.html" style="background:#111827; border:1px solid #1e3a5f; border-radius:12px; padding:16px 20px; text-decoration:none; display:block;">
+        <div style="color:#3b82f6; font-weight:700; margin-bottom:4px;">🏆 كيف تشارك في سحوبات Rivxff؟</div>
+        <div style="color:#64748b; font-size:0.85rem;">دليل كامل للمشاركة والفوز بجوائز مجانية</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Rivxff · جميع الحقوق محفوظة</p>
+    <p style="margin-top:6px;">تابعنا على <a href="#">يوتيوب</a> و <a href="#">كيك</a></p>
+    <p style="margin-top:6px;"><a href="privacy.html">سياسة الخصوصية</a></p>
+  </footer>
+
+  <script>
+    function submitID() {
+      const id = document.getElementById('playerID').value.trim();
+      if (!id || id.length < 5) {
+        alert('⚠️ يرجى إدخال ID صحيح');
+        return;
+      }
+      document.getElementById('successMsg').style.display = 'block';
+      document.getElementById('playerID').disabled = true;
+      document.querySelector('button').disabled = true;
+    }
+  </script>
+
+</body>
+</html>
